@@ -1,24 +1,23 @@
 {
   "name": "todo-api-app",
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "nodemon",
+    "dev": "ts-node src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "db:migrate": "drizzle-kit push"
+    "db:migrate": "drizzle-kit push",
+    "migrate-and-start": "drizzle-kit push && node dist/server.js"
   },
   "dependencies": {
     "better-sqlite3": "^12.2.0",
     "drizzle-orm": "^0.44.3",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "drizzle-kit": "^0.31.4"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.13",
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.14",
-    "drizzle-kit": "^0.31.4",
-    "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
