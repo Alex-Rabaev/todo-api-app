@@ -1,5 +1,5 @@
-import { db } from "../db";
-import { tasks } from "../schema/tasks";
+import { db } from "../db/index.ts";
+import { tasks } from "../schema/tasks.ts";
 import { eq } from "drizzle-orm";
 
 export class TaskModel {
