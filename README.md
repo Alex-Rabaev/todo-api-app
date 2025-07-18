@@ -63,16 +63,15 @@ The API will be available at: `http://localhost:3000`
 ```
 
 * **Response:**
-
   * `200 OK` on success
+  * `404 Not Found` if task does not exist
+
 ```json
 {
   "message": "Updated"
 }
 ```
-
-  * `404 Not Found` if task does not exist
-
+or
 ```json
 {
   "error": "Not found"
@@ -90,12 +89,14 @@ The API will be available at: `http://localhost:3000`
 * **Response:**
 
   * `200 OK` on success
+  * `404 Not Found` if task does not exist
+
 ```json
 {
   "message": "Deleted"
 }
 ```
-  * `404 Not Found` if task does not exist
+or
 ```json
 {
     "error": "Not found"
