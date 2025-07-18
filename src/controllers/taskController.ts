@@ -24,7 +24,7 @@ export const deleteTask = async (req: Request, res: Response) => {
   res.json({ message: "Deleted" });
 };
 
-export const getTasks = async (req: Request, res: Response) => {
+export const getTasksByStatusOrAll = async (req: Request, res: Response) => {
   const { status } = req.query;
   const tasks = await TaskModel.getTasksByStatusOrAll(status as any);
   res.json(tasks);
