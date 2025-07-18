@@ -4,7 +4,7 @@ import {
     deleteTask,
     getTasksByStatusOrAll,
     updateTaskStatus
-  } from "../controllers/taskController.ts";
+  } from "../controllers/taskController";
 
 const router = Router();
 

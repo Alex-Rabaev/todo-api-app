@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { TaskModel } from "../models/taskModel.ts";
+import { TaskModel } from "../models/taskModel";
 
 const validStatuses = ["in progress", "completed"] as const;
 type Status = (typeof validStatuses)[number];
