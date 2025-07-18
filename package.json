@@ -1,26 +1,13 @@
 {
   "name": "todo-api-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node src/server.ts",
+    "dev": "nodemon",
     "build": "tsc",
     "start": "node dist/server.js",
     "db:migrate": "drizzle-kit push"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Alex-Rabaev/todo-api-app.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Alex-Rabaev/todo-api-app/issues"
-  },
-  "homepage": "https://github.com/Alex-Rabaev/todo-api-app#readme",
   "dependencies": {
     "better-sqlite3": "^12.2.0",
     "drizzle-orm": "^0.44.3",
@@ -31,6 +18,7 @@
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.14",
     "drizzle-kit": "^0.31.4",
+    "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
